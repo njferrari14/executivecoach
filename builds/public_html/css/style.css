@@ -305,5 +305,138 @@ template {
 [hidden] {
   display: none; }
 
-html {
-  font-family: Helvetica, sans-serif; }
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100%; }
+
+.grid-container, .grid-container-lg {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 25%); }
+
+.grid-container-lg {
+  grid-template-columns: repeat(8, 12.5%); }
+
+a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+ul {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, serif;
+  width: 100%;
+  text-align: center; }
+
+h1, h5 {
+  color: #FFFFFF; }
+
+h2 {
+  font-size: 2em; }
+
+.training-box button, .philosophy button {
+  display: block;
+  border: none;
+  background-color: #CFEBFC;
+  margin: 0 auto; }
+
+header {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 33px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: scroll;
+  width: 100%; }
+
+nav {
+  background-color: #023C99;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  grid-area: nav;
+  grid-template-areas: "logo menu menu menu menu menu menu menu"; }
+
+.logo {
+  width: 18px;
+  justify-self: left;
+  margin-left: 15px;
+  grid-area: logo; }
+
+.nav-menu {
+  justify-self: right;
+  grid-area: menu;
+  margin: 0;
+  padding: 0; }
+  .nav-menu li {
+    float: left;
+    line-height: .8em;
+    padding: 10px 0 0; }
+    .nav-menu li:last-child {
+      margin-right: 5px; }
+    .nav-menu li:not(:last-child) a {
+      border-right: 1px solid #FFFFFF; }
+    .nav-menu li a {
+      font-size: .9em;
+      line-height: .9em;
+      font-weight: 900;
+      padding: 0 5px; }
+      .nav-menu li a:hover, .nav-menu li a .training-box button:hover {
+        color: #F9AD61; }
+      .nav-menu li a:active, .nav-menu li a .training-box button:hover {
+        color: #ba6107; }
+
+h1 {
+  grid-area: brand;
+  margin: 0 auto;
+  padding: 30vh 0;
+  font-size: 1.5em; }
+
+.training-box {
+  background-color: #CFEBFC;
+  padding: 20px 0; }
+  .training-box:not(:last-child) {
+    border-bottom: 1px dashed #FFFFFF; }
+
+.hidden {
+  display: none;
+  height: 0; }
+
+.arrow {
+  display: block;
+  font-size: .9em;
+  transform: rotate(90deg);
+  transition: transform .8s; }
+  .arrow:hover {
+    transform: rotate(-90deg); }
+
+#about p {
+  padding: 0 15px; }
+
+.philosophy button {
+  color: #FFFFFF;
+  background-color: #49B5F3; }
+
+.philosophy, .proposal {
+  background-color: #49B5F3;
+  color: #FFFFFF;
+  padding: 20px 0; }
+
+.portrait {
+  display: block;
+  margin: 50px auto; }
+
+footer {
+  background-color: #023C99;
+  color: #FFFFFF;
+  padding: 20px 0; }
+  footer ul {
+    margin: 0; }

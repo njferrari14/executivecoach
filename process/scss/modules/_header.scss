@@ -1,0 +1,61 @@
+
+header {
+	@include backImage('../images/header-bg.jpg', 0 33px, cover);
+	width: 100%;
+}
+
+nav {
+	background-color: $darkblue;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 10px 0;
+	grid-area: nav;
+	grid-template-areas:
+		"logo menu menu menu menu menu menu menu"
+}
+
+.logo {
+	width: 18px;
+	justify-self: left;
+	margin-left: 15px;
+	grid-area: logo;
+}
+
+.nav-menu {
+	justify-self: right;
+	grid-area: menu;
+	margin: 0;
+	padding: 0;
+
+	li {
+		float: left;
+		line-height: .8em;
+		padding: 10px 0 0;
+		&:last-child {
+			margin-right: 5px;
+		}
+		&:not(:last-child) a {
+			border-right: 1px solid $white;
+		}
+		a {
+			font-size: .9em;
+			line-height: .9em;
+			font-weight: 900;
+			padding: 0 5px; 
+			&:hover, .training-box button:hover {
+				color: $orange;
+			}
+			&:active, .training-box button:hover {
+				color: darken($orange, 30%);
+			}
+		}
+	}
+}
+
+h1 {
+	grid-area: brand;
+	margin: 0 auto;
+	padding: 30vh 0;
+	font-size: 1.5em;
+}

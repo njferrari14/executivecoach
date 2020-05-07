@@ -1,0 +1,31 @@
+.training-box {
+	background-color: $lightblue;
+	padding: 20px 0;
+
+	&:not(:last-child) {
+		border-bottom: 1px dashed $white;
+	}
+
+	button {
+		@extend %learnBtn;
+	}
+}
+
+.hidden {
+	display: none;
+	height: 0;
+}
+
+.arrow {
+	display: block;
+	font-size: .9em;
+	transform: rotate(90deg);
+	transition: transform .8s;
+
+	&:hover {
+		transform: rotate(-90deg);
+	}
+}
+
+
+

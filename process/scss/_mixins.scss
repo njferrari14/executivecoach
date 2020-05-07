@@ -1,0 +1,17 @@
+@mixin backImage($image,
+  $bgPos: center center,
+  $bgSize: cover,
+  $bgAttachment: scroll
+  ) {
+  background: linear-gradient( to bottom,
+    rgba(0,0,0,.6),
+    rgba(0,0,0,0)),
+    url($image);
+  background-repeat: no-repeat;
+  background-position: $bgPos;
+  background-size: $bgSize;
+  -webkit-background-size: $bgSize;
+  -moz-background-size: $bgSize;
+  -o-background-size: $bgSize;
+  background-attachment: $bgAttachment;
+}

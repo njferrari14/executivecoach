@@ -1,7 +1,19 @@
 /* Colors */
 
+$black: #000000;
 $white: #FFFFFF;
+$blue: #49B5F3;
+$darkblue: #023C99;
+$lightblue: #CFEBFC;
+$orange: #F9AD61;
+
+$color-bg-main: $white;
+$color-bg-alt: $blue;
+$color-bg-header: $darkblue;
+$color-text-main: $black;
+$color-text-alt: $white;
 
 /* Fonts */
 
-$font-main: Helvetica, sans-serif;
+$font-main: Arial, sans-serif;
+$font-headers: Georgia, serif;

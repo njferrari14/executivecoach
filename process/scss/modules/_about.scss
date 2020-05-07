@@ -1,0 +1,24 @@
+#about p {
+	padding: 0 15px;
+}
+
+.philosophy button {
+	@extend %learnBtn;
+	color: $white;
+	background-color: $blue;
+}
+
+%blueBox {
+	background-color: $blue;
+	color: $white;
+	padding: 20px 0;
+}
+
+.philosophy, .proposal {
+	@extend %blueBox;
+}
+
+.portrait {
+	display: block;
+	margin: 50px auto;
+}
