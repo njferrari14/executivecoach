@@ -1,4 +1,3 @@
-
 header {
 	@include backImage('../images/header-bg.jpg', 0 33px, cover);
 	width: 100%;
@@ -9,16 +8,16 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	padding: 10px 0;
+	padding: 5px 0;
 	grid-area: nav;
 	grid-template-areas:
 		"logo menu menu menu menu menu menu menu"
 }
 
 .logo {
-	width: 18px;
+	width: 22px;
 	justify-self: left;
-	margin-left: 15px;
+	margin-left: 20px;
 	grid-area: logo;
 }
 
@@ -31,7 +30,7 @@ nav {
 	li {
 		float: left;
 		line-height: .8em;
-		padding: 10px 0 0;
+		padding: 12px 0 0;
 		&:last-child {
 			margin-right: 5px;
 		}
@@ -54,8 +53,8 @@ nav {
 }
 
 h1 {
+	color: $white;
 	grid-area: brand;
 	margin: 0 auto;
 	padding: 30vh 0;
-	font-size: 1.5em;
 }

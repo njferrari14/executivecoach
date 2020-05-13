@@ -1,6 +1,7 @@
 const gulp = require("gulp"),
   sass = require("gulp-sass"),
   sourcemaps = require("gulp-sourcemaps"),
+  autoprefixer = require("gulp-autoprefixer"),
   browserSync = require("browser-sync").create(),
   source = "./process/",
   dest = "./builds/public_html/";
@@ -25,6 +26,9 @@ function styles() {
         style: "compressed"
       }).on("error", sass.logError)
     )
+    .pipe(autoprefixer({
+      cascade: false
+    }))
     .pipe(gulp.dest(dest + "css"));
 }
 

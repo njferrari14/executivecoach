@@ -76,6 +76,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -331,13 +332,23 @@ ul {
 h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, serif;
   width: 100%;
-  text-align: center; }
-
-h1, h5 {
-  color: #FFFFFF; }
-
-h2 {
+  text-align: center;
   font-size: 2em; }
+
+h2, h4 {
+  font-weight: 400;
+  font-size: 1.5em; }
+
+h3 {
+  display: inline-block;
+  padding: 20px 0;
+  margin: 0; }
+
+h4 {
+  font-weight: 900; }
+
+p {
+  padding: 0 15px; }
 
 .training-box button, .philosophy button {
   display: block;
@@ -350,9 +361,6 @@ header {
   background-repeat: no-repeat;
   background-position: 0 33px;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-attachment: scroll;
   width: 100%; }
 
@@ -361,14 +369,14 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 10px 0;
+  padding: 5px 0;
   grid-area: nav;
   grid-template-areas: "logo menu menu menu menu menu menu menu"; }
 
 .logo {
-  width: 18px;
+  width: 22px;
   justify-self: left;
-  margin-left: 15px;
+  margin-left: 20px;
   grid-area: logo; }
 
 .nav-menu {
@@ -379,7 +387,7 @@ nav {
   .nav-menu li {
     float: left;
     line-height: .8em;
-    padding: 10px 0 0; }
+    padding: 12px 0 0; }
     .nav-menu li:last-child {
       margin-right: 5px; }
     .nav-menu li:not(:last-child) a {
@@ -395,10 +403,10 @@ nav {
         color: #ba6107; }
 
 h1 {
+  color: #FFFFFF;
   grid-area: brand;
   margin: 0 auto;
-  padding: 30vh 0;
-  font-size: 1.5em; }
+  padding: 30vh 0; }
 
 .training-box {
   background-color: #CFEBFC;
@@ -418,9 +426,6 @@ h1 {
   .arrow:hover {
     transform: rotate(-90deg); }
 
-#about p {
-  padding: 0 15px; }
-
 .philosophy button {
   color: #FFFFFF;
   background-color: #49B5F3; }
@@ -432,7 +437,12 @@ h1 {
 
 .portrait {
   display: block;
+  width: 70vw;
+  max-width: 500px;
   margin: 50px auto; }
+
+.quote {
+  text-align: center; }
 
 footer {
   background-color: #023C99;
