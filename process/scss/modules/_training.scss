@@ -1,6 +1,6 @@
 .training-box {
 	background-color: $lightblue;
-	padding: 20px 0;
+	padding: 10px 0 0;
 
 	&:not(:last-child) {
 		border-bottom: 1px dashed $white;
@@ -8,24 +8,38 @@
 
 	button {
 		@extend %learnBtn;
+
+		&:hover, &:focus {
+			background-color: darken($lightblue, 5%);
+		}
 	}
 }
 
-.hidden {
-	display: none;
-	height: 0;
+%arrow {
+	display: block;
+	width: 100%;
+	font-size: .9em;
+	transition: all .8s;
 }
 
 .arrow {
-	display: block;
-	font-size: .9em;
-	transform: rotate(90deg);
-	transition: transform .8s;
-
-	&:hover {
-		transform: rotate(-90deg);
-	}
+	@extend %arrow;
+	transform: rotate(0);
 }
 
+.hp {
+	margin: 0;
+	padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: $lightblue;
+}
 
-
+.active {
+	.arrow {
+		@extend %arrow;
+		transform: rotate(180deg);
+	}
+}

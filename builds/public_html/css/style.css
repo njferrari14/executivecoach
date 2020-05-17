@@ -327,7 +327,9 @@ a {
   color: #FFFFFF; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, serif;
@@ -341,11 +343,14 @@ h2, h4 {
 
 h3 {
   display: inline-block;
-  padding: 20px 0;
+  padding: 40px 0;
   margin: 0; }
 
 h4 {
   font-weight: 900; }
+
+h5 {
+  margin: 10px 0 30px; }
 
 p {
   padding: 0 15px; }
@@ -354,7 +359,11 @@ p {
   display: block;
   border: none;
   background-color: #CFEBFC;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px 0; }
+  .training-box button:focus, .philosophy button:focus, .training-box button:focus-within, .philosophy button:focus-within, .training-box button:visited, .philosophy button:visited, .training-box button:active, .philosophy button:active {
+    outline: none; }
 
 header {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../images/header-bg.jpg");
@@ -410,25 +419,44 @@ h1 {
 
 .training-box {
   background-color: #CFEBFC;
-  padding: 20px 0; }
+  padding: 10px 0 0; }
   .training-box:not(:last-child) {
     border-bottom: 1px dashed #FFFFFF; }
+  .training-box button:hover, .training-box button:focus {
+    background-color: #b7e1fb; }
 
-.hidden {
-  display: none;
-  height: 0; }
+.arrow, .active .arrow {
+  display: block;
+  width: 100%;
+  font-size: .9em;
+  transition: all .8s; }
 
 .arrow {
-  display: block;
-  font-size: .9em;
-  transform: rotate(90deg);
-  transition: transform .8s; }
-  .arrow:hover {
-    transform: rotate(-90deg); }
+  transform: rotate(0); }
+
+.hp {
+  margin: 0;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #CFEBFC; }
+
+.active .arrow {
+  transform: rotate(180deg); }
+
+.phil {
+  background-color: #49B5F3; }
+
+.philosophy {
+  padding: 20px 0 0 !important; }
 
 .philosophy button {
   color: #FFFFFF;
   background-color: #49B5F3; }
+  .philosophy button:hover {
+    background-color: #31abf1; }
 
 .philosophy, .proposal {
   background-color: #49B5F3;
@@ -443,6 +471,64 @@ h1 {
 
 .quote {
   text-align: center; }
+
+.whyBtn-box {
+  width: 100%;
+  text-align: center; }
+
+.whyBtn {
+  background-color: #023C99;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 8px 5px; }
+  .whyBtn:hover, .whyBtn:focus {
+    background-color: #0350cb; }
+  .whyBtn:active {
+    background-color: #012867; }
+
+#contact {
+  margin-bottom: 50px; }
+
+form {
+  padding: 0 15px;
+  max-width: 500px;
+  margin: 0 auto; }
+  form .field {
+    padding-bottom: 10px; }
+  form input, form label {
+    display: block; }
+  form label {
+    font-family: Georgia, serif; }
+  form input, form textarea {
+    width: 100%;
+    color: #F9AD61;
+    border: 1px solid #CFEBFC;
+    padding: 5px 5px 2px; }
+  form textarea {
+    max-width: 500px;
+    max-height: 200px; }
+  form ::-webkit-input-placeholder {
+    /* Chrome */
+    color: #F9AD61; }
+  form :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #F9AD61; }
+  form ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #F9AD61;
+    opacity: 1; }
+  form :-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: #F9AD61;
+    opacity: 1; }
+  form button {
+    background-color: #F9AD61;
+    border: none;
+    padding: 8px 8px 5px; }
+    form button:hover, form button:focus {
+      background-color: #fbc792; }
+    form button:active {
+      background-color: #f79430; }
 
 footer {
   background-color: #023C99;

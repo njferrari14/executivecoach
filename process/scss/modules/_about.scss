@@ -1,7 +1,19 @@
+.phil {
+	background-color: $blue;
+}
+
+.philosophy {
+	padding: 20px 0 0 !important;
+}
+
 .philosophy button {
 	@extend %learnBtn;
 	color: $white;
 	background-color: $blue;
+
+	&:hover {
+		background-color: darken($blue, 5%)
+	}
 }
 
 %blueBox {
@@ -23,4 +35,24 @@
 
 .quote {
 	text-align: center;
+}
+
+.whyBtn-box {
+	width: 100%;
+	text-align: center;
+}
+
+.whyBtn {
+	background-color: $darkblue;
+	color: $white;
+	border: none;
+	padding: 8px 8px 5px;
+
+	&:hover, &:focus {
+		background-color: lighten($darkblue, 10%);
+	}
+
+	&:active {
+		background-color: darken($darkblue, 10%);
+	}
 }
