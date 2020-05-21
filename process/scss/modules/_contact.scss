@@ -4,7 +4,7 @@
 
 form {
 	padding: 0 15px;
-	max-width: 500px;
+	max-width: 600px;
 	margin: 0 auto;
 
 	.field {
@@ -21,13 +21,12 @@ form {
 
 	input, textarea {
 		width: 100%;
-		color: $orange;
 		border: 1px solid $lightblue;
-		padding: 5px 5px 2px;
+		padding: 5px 5px 3px;
 	}
 
 	textarea {
-		max-width: 500px;
+		max-width: 600px;
 		max-height: 200px;
 	}
 

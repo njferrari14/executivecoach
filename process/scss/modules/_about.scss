@@ -29,12 +29,17 @@
 .portrait {
 	display: block;
 	width: 70vw;
-	max-width: 500px;
+	max-width: 400px;
 	margin: 50px auto;
 }
 
 .quote {
 	text-align: center;
+}
+
+.why {
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 .whyBtn-box {

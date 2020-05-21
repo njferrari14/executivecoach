@@ -423,7 +423,7 @@ h1 {
   color: #FFFFFF;
   grid-area: brand;
   margin: 0 auto;
-  padding: 250px 0; }
+  padding: 30vh 0; }
 
 #services {
   width: 100%;
@@ -484,10 +484,6 @@ h1 {
 
 .quote {
   text-align: center; }
-
-.why {
-  max-width: 1024px;
-  margin: 0 auto; }
 
 .whyBtn-box {
   width: 100%;
@@ -595,6 +591,7 @@ footer {
     background-position: 0 102px;
     height: 800px; }
     header h1 {
+      padding: 30vh 0;
       font-size: 5em; }
   h2 {
     position: relative;

@@ -1,0 +1,144 @@
+@media screen and (min-width: 880px) {
+	
+	.learn {
+		display: none !important;
+	}
+
+	.hp {
+		display: block;
+		visibility: visible;
+		max-height: 100%;
+	}
+
+	p {
+		margin: 0 auto;
+		max-width: 800px;
+		font-size: 1.2em;
+	}
+
+	header {
+		background-position: 0 102px;
+		height: 800px;
+
+		h1 {
+			font-size: 5em;
+		}
+	}
+
+	h2 {
+		position: relative;
+		top: -350px;
+		color: $white;
+		font-size: 2em;
+	}
+
+	h3 {
+		margin: 0 0 50px;
+		font-size: 3em;
+	}
+
+	nav {
+		position: relative;
+		padding: 20px 0;
+
+		.logo {
+			width: 40px;
+		}
+
+		ul {
+			margin-top: 10px !important;
+			font-size: 1.5em;
+		}
+	}
+
+	#services {
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 12 (8.33%, repeat);
+		grid-template-areas:
+			"h h h h h h h h h h h h"
+			"coach coach coach coach sales sales sales sales corp corp corp corp";
+
+		h3 {
+			grid-area: h;
+		}
+	}
+	
+	.coach {
+		justify-self: center;
+		grid-area: coach;
+	}
+
+	.sales {
+		justify-self: center;
+		grid-area: sales;
+	}
+
+	.corp {
+		justify-self: center;
+		grid-area: corp;
+	}
+
+	.training-box {
+		width: 90%;
+		padding: 0 5px 20px;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+
+		&:not(:last-child) {
+			margin-right: 2%;
+		}
+
+		h4 {
+			font-size: 1.5em !important;
+		}
+
+
+	}
+
+	#about {
+		margin-top: 80px;
+
+		.hp {
+			margin: 0 auto;
+			padding-bottom: 20px;
+		}
+	}
+	
+	.why {
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 8 (12.5%, repeat);
+		grid-template-areas: 
+			". portrait portrait . why why why ."
+			". portrait portrait . why why why ."
+			". portrait portrait . why why why ."
+			". portrait portrait . why why why .";
+	}
+	
+	.why-box {
+		grid-area: why;
+		max-width: 400px;
+		justify-self: center;
+		align-self: center;
+	}
+
+	.portrait {
+		grid-area: portrait;
+	}
+
+
+	.quote {
+		max-width: 500px;
+		margin: 20px auto;
+	}
+
+	label, input, textarea {
+		font-size: 1.2em;
+	}
+
+	footer {
+		padding: 50px 0;
+	}
+}

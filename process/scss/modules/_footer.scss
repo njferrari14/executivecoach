@@ -2,8 +2,53 @@ footer {
 	background-color: $darkblue;
 	color: $white;
 	padding: 20px 0;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 4 (25%, repeat);
+	grid-template-areas:
+		"info info social social";
 
 	ul {
 		margin: 0;
+
+		li {
+			margin: 15px 0;
+		}
+	}
+
+	.info {
+		grid-area: info;
+		justify-self: center;
+	}
+
+	.social {
+		grid-area: social;
+		justify-self: center;
+		text-align: center;
+
+		h6 {
+			width: 60%;
+			font-size: 1em;
+			margin: 15px auto 20px;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			text-align: center;
+
+			.hover_link {
+				display: none;
+			}
+
+			&:hover {
+				.hover_link {
+					display: initial;
+				}
+				.normal_link {
+					display: none;
+				}
+			}
+		}
 	}
 }

@@ -11,7 +11,8 @@ nav {
 	padding: 5px 0;
 	grid-area: nav;
 	grid-template-areas:
-		"logo menu menu menu menu menu menu menu"
+		"logo menu menu menu menu menu menu menu";
+	z-index: 2;
 }
 
 .logo {
@@ -56,5 +57,5 @@ h1 {
 	color: $white;
 	grid-area: brand;
 	margin: 0 auto;
-	padding: 30vh 0;
+	padding: 250px 0;
 }
